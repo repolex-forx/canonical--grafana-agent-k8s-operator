@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/canonical/grafana-agent-k8s-operator/commit/1b88dc619ed3c2a8cf9097bae333f5df51ebdbb3",
       "git:hexsha": "1b88dc619ed3c2a8cf9097bae333f5df51ebdbb3",
-      "repolex:parseStatus": "metadata_complete",
+      "repolex:parseStatus": "ast_complete",
       "git:tagName": "rev263"
     },
     {
