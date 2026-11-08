@@ -1,1 +1,179 @@
-Initializing
+# Repolex Knowledge Graph of canonical/grafana-agent-k8s-operator
+
+RDF knowledge graph data for [canonical/grafana-agent-k8s-operator](https://github.com/canonical/grafana-agent-k8s-operator), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download canonical/grafana-agent-k8s-operator
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 1b88dc619ed3c2a8cf9097bae333f5df51ebdbb3
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 1b88dc619ed3c2a8cf9097bae333f5df51ebdbb3
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0236289475b8564e93330e464ebd33677f0bd681.nq.gz
+│   ├── 03e2cd4a0dbd9064ec26090b573b2397e2671b7d.nq.gz
+│   ├── 07cf4a9de55c3ff26bce6389469346db2bbe8fc2.nq.gz
+│   ├── 0c1e4bdf3862fbc587adbaf1029e5f3bf1fbba85.nq.gz
+│   ├── 0d27e3f6bec6db46addd1bb95b87db61ddd4c734.nq.gz
+│   ├── 0e7ca35c53a7f3cb01230bb73553501f05bd8e9f.nq.gz
+│   ├── 0f16506e42b0af4ef4a5e6bcd10503ed36cabc91.nq.gz
+│   ├── 13b7886278f6eb59e93ab5b0b24617d351e29831.nq.gz
+│   ├── 146fdab435244e5382ab4012a4fae3533e36de42.nq.gz
+│   ├── 14cd592e0466bfdd79dcf2003f3bf9310308a98a.nq.gz
+│   ├── 1527248b125dabe30867ea3750b2a727c6797536.nq.gz
+│   ├── 1756386fe3e5b153d4a3a1754d2622fa137ca420.nq.gz
+│   ├── 1a5f0e77f4c103012fb323e34faeae62c1132c58.nq.gz
+│   ├── 1bb45e9085b56696c3b53307f0da6268b4b3d16a.nq.gz
+│   ├── 1cdeee702bbf4ce5477b9edaf491e49bb232a6c2.nq.gz
+│   ├── 1dc34d646ff35a94f928dc63ada4010cee27c81f.nq.gz
+│   ├── 204f0516ddac9e827847c4f98ba6613e5158beb4.nq.gz
+│   ├── 2125183b01897dc4614d0aec7228a04770113b0e.nq.gz
+│   ├── 219793a0aa948e6766e7ef5ea130682b05755c83.nq.gz
+│   ├── 22c5a836af7c82d4cad923a537b6a07d00f36d9b.nq.gz
+│   ├── 22d05a81afe043737dfdb5dce8958ba329c09514.nq.gz
+│   ├── 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.nq.gz
+│   ├── 2aa94fca448668db6f0fea627f9049d83841e6af.nq.gz
+│   ├── 2b28d45cb18e5908eff76c1ace824b0fa7cbb4e4.nq.gz
+│   ├── 2bbd34dc63d1eb0b76e8a83e3a40ce74bf62a8b6.nq.gz
+│   ├── 2c3f0e5ed7915b3800370e2f37f7661e29df6742.nq.gz
+│   ├── 2e40cea1a1cee4b48f9e460a0c7b4b8f25246aa6.nq.gz
+│   ├── 2ee3d0fef621ffed2315299646d6299866b51940.nq.gz
+│   ├── 30b7cfc251316ca48a2c576dd532be0704f1b7b4.nq.gz
+│   ├── 311ad891fbf909c7bb6b56b33d7f5edf39bfa05a.nq.gz
+│   ├── 312bdb669621cb09bc7359aac92ff1fb920d6168.nq.gz
+│   ├── 347905eaa796bb62e536138331666cc39d30374c.nq.gz
+│   ├── 36c341caf665e5005a89983526b205ac8bc8987e.nq.gz
+│   ├── 37fe24583056605d9e8da8e7bb9716a94a0d8892.nq.gz
+│   ├── 387ac6a47738bcce3f686ea6d43178ab2197e414.nq.gz
+│   ├── 38bc2a5e41af87be8c9b6cba6a131d3ef04848d3.nq.gz
+│   ├── 3e3c0fa82e3b9b0a38e1cc444c61e7a04a0fa624.nq.gz
+│   ├── 4179562814f11a19ff6d2bde1a8702404130ebb0.nq.gz
+│   ├── 440669e1421c237ffed4dce626d61cabdc2e043e.nq.gz
+│   ├── 4e15ae4e548d9dda44c0af260e33060614abfc94.nq.gz
+│   ├── 4eff6b996262201a4a191ab751957ed52fc16afe.nq.gz
+│   ├── 4fb571dfa5c5a382c20af85aac97bd8e0d7f3f8e.nq.gz
+│   ├── 55969d643048afbcfabdfa8a3314e271294fff2f.nq.gz
+│   ├── 5988ef6a7ec1112474522ad106dea4d6d25908fa.nq.gz
+│   ├── 6529018230d905782e567630986cf15c86cf441b.nq.gz
+│   ├── 68a1ef274223b0e216e66349fc9749d31283bf39.nq.gz
+│   ├── 6ccd559eabeae93e4d23215fa450130fa9b37ace.nq.gz
+│   ├── 6f94cded4fec60283aa42d48789f2f779e32bb9a.nq.gz
+│   ├── 763c8674d2b7243c4c46ce13e4dcc16d182896ac.nq.gz
+│   ├── 7a2a7686729d61f878822e38cfa32022978865ba.nq.gz
+│   ├── 7aef00c888af0e0e9344ef995ef83a073f115e8e.nq.gz
+│   ├── 7cb3f06b9a644ad702dd91e46934ebc3a3d85970.nq.gz
+│   ├── 888c85583f72dc67ed997c9868566452e70cf898.nq.gz
+│   ├── 88ff1492be46a0699eeca8676d36750066c2ac8c.nq.gz
+│   ├── 8943b29a453fd9def9b7efaed5320fff24aebb24.nq.gz
+│   ├── 8ef84fcd43f3b7a46768c31b20f36cab48ffdfe0.nq.gz
+│   ├── 901f14351bdce339c3fcc6c3b3112c94e4fecb2f.nq.gz
+│   ├── 9239902d94ad36b6bdc00a12475b691582eeb63c.nq.gz
+│   ├── 9435e3f86f6b4c9fdd5431967114d5159108266e.nq.gz
+│   ├── 9869be81a4a152bc6f0fcfce4a17c9a6278fd64b.nq.gz
+│   ├── 98a86e9d270dee81aaf94e542c8c181f5c3c27b7.nq.gz
+│   ├── 9a6e105f41f8b202ffcfa31b4cc98972a1a1a7b4.nq.gz
+│   ├── 9a9d038f26b1b777188631797d851430ed5dddd5.nq.gz
+│   ├── 9ce063ce13ecb2fa281664cbf27dcd5c830315e4.nq.gz
+│   ├── 9deb0adaa927bdf3a863694e1a4f8e0a0afbe614.nq.gz
+│   ├── a6720ddae548ca02f636e702b1a9d35ced98cc79.nq.gz
+│   ├── a9e355df3eeea488d4d1d6fa67b77ce991e412b3.nq.gz
+│   ├── aa17c4a6c1de26f6531b8366291ae234deee7409.nq.gz
+│   ├── aa45f8743c34b644c5dcc4cdec53d6705baa1527.nq.gz
+│   ├── aa6a47c996a2133e73d81da83c67fed85d1e0279.nq.gz
+│   ├── ad60b546623c02340f4e7eb19bf83031a47b2ea1.nq.gz
+│   ├── ae8575b34868a2fd779050d5801c7bc4da5e67d3.nq.gz
+│   ├── aff29f890a081dacb874528f6aa2e9edde9c581c.nq.gz
+│   ├── b2348b9fbfdc4eb154566c80f844510446be1d02.nq.gz
+│   ├── b415af0a8109afa614fe12d8c9d83e095c752d50.nq.gz
+│   ├── b7fc0df5f935dbadabe57be029d722bc9c3f7ab2.nq.gz
+│   ├── bc6a02c945fa01fa126e8e600077df0ca77f16f0.nq.gz
+│   ├── bfdb536dcf95926c26510a1e868475febb5b87c9.nq.gz
+│   ├── c52aa73d296464e232c94631b9290c1ea7ab4a54.nq.gz
+│   ├── cceda478d35490e15ee49575abddd660a708434c.nq.gz
+│   ├── d0561b37dc0688d49520191a29fadfad93671edb.nq.gz
+│   ├── d094c9e2a4c7fe5c3192d41d02d27d711c1eb9f7.nq.gz
+│   ├── d25729588b7ddd229cb0756c0b098ea3709a7a6e.nq.gz
+│   ├── d486b94765938e5cf01cceba826d081d39d081c2.nq.gz
+│   ├── de535d0f97c5fd103dfccb173b400b7e71461bd6.nq.gz
+│   ├── de6e6ae556dd4803f92154b812ab87f2fee79d19.nq.gz
+│   ├── df3cf163ea064e70ff19a30eab5da3f0d154553f.nq.gz
+│   ├── e2b7c65beaf94cc8550bf64962b0919d6e1e1e85.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e8ef1ceac7601e5c7c3a1b5d27157c1a2d2800b0.nq.gz
+│   ├── ed87db6dcc1787085e170aef4d54a35e0f9ebdb3.nq.gz
+│   ├── ef345f24753a2018379ca06166c381e471523dfe.nq.gz
+│   ├── f086037e951ba3903c4e9872ceb0627fb6599713.nq.gz
+│   ├── f304f8d8ecaeb72efef4a92935a1f7ba2251d2cb.nq.gz
+│   ├── f35143eb2ace2ec8c395b78e06459ca40e03caad.nq.gz
+│   ├── f4aa9e929f7e6bdca6242a2545014480968600ec.nq.gz
+│   ├── f5b6332044b0fc3d7ef037d978afec78e8e79cc0.nq.gz
+│   ├── f6a25a07b84488242d9bbbfa3b030d64201ea3c5.nq.gz
+│   ├── fce310a098539545042dec14a6127f880155bdae.nq.gz
+│   └── fd13c53c5481dc3f0df38f2a8e9c973b7527bcf4.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 1b88dc619ed3c2a8cf9097bae333f5df51ebdbb3.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 108 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[canonical/grafana-agent-k8s-operator](https://github.com/canonical/grafana-agent-k8s-operator)
+
+---
+*Parsed on 2026-11-08 by [repolex](https://repolex.ai)*

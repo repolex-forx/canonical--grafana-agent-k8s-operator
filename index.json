@@ -1,0 +1,11 @@
+{
+  "org": "canonical",
+  "repo": "grafana-agent-k8s-operator",
+  "versions": [
+    {
+      "commit": "1b88dc619ed3c2a8cf9097bae333f5df51ebdbb3",
+      "tag": "rev262",
+      "parsed_at": "2026-11-08T15:24:25.710834+00:00"
+    }
+  ]
+}
